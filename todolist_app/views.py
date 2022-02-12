@@ -16,7 +16,7 @@ def todolist(request):
         if form.is_valid():
             instance=form.save(commit=False)
             instance.manage=request.user
-            instance.form.save()
+            instance.save()
 
         messages.success(request,'New task added!')
         return redirect('todolist')
