@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block title%}<title>Welcome to TaskMate!!</title>{%endblock%}
+
+
+{%block content%}
+<div class='container'>
+    <div class='row mt-5'>
+
+<div class='col-lg-4'>
+  <img src="{%static 'images/edgar-nKC772R_qog-unsplash.jpg'%}" class='rounded-lg shadow-sm' width='360' height='250'>
+</div>
+<div class='col-lg-4'>
+  <img src="{%static 'images/kanashi-BLW_KQ0Rkn0-unsplash.jpg'%}" class='rounded-lg shadow-sm'width='360' height='250'>
+  
+</div>
+<div class='col-lg-4'>
+  <img src="{%static 'images/kanashi-BLW_KQ0Rkn0-unsplash.jpg'%}" class='rounded-lg shadow-sm'width='360' height='250'>
+</div>
+
+
+    </div>
+    <div class='row mt-5'>
+      <div class='col-md-10 offset-md-1'>
+      <center><p class='h1 text-primary'>Herry Wijaya Everyday's Main Quests</p></center>
+        <center><p class='h2 mt-3'>github</p></center>
+
+          <center><p class='h5'>https://www.udemy.com/course/complete-django-masterclass/</p></center>
+          <center><a href="{%url 'todolist'%}"><button type='button' class=' shadow btn btn-primary btn-lg mt-3'>Initiate today's main quest!</button></a></center>
+      </div>
+    </div>
+      </div>
+{%endblock%}
+
